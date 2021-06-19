@@ -1,0 +1,173 @@
+body {
+    background-color: #1F2833;
+    color: #C5C6C7;
+    min-height: 100%;
+}
+
+header {
+    margin-bottom: 70px;
+    border-top: #45A29E 11px solid;
+    padding-top: 10px;
+    background-color: #192029;
+    text-transform: uppercase;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 3%;
+    z-index: 99;
+    font-size: 40px;
+    border: none;
+    outline: none;
+    background-color: #192029;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+  
+#myBtn:hover {
+    background-color: #45A29E;
+}
+
+#title {
+    text-align: center;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a h3 {
+    color: #C5C6C7;
+}
+
+a:hover h3, a:active h3 {
+    color: #66FCF1;
+}
+
+/* ---------- navbar ---------- */
+nav {
+    height: 70px;
+    padding: 15px 0;
+    background-color: #192029;
+}
+
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    width:100%;
+}
+
+nav ul li {
+    float:left;
+    width:20%;
+}
+
+nav a:link, a:visited {
+    height:40px;
+    line-height:100%;
+    display: block;
+    font-weight: bold;
+    color: #45A29E;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+nav a:hover,a:active{
+    color: #66FCF1;
+    position: relative;
+}
+
+nav a:hover::before {
+    content: '';
+    position: absolute;
+    display: block;
+    border-bottom: 1px solid #66FCF1;
+    left: 30%;
+    width: 40%;
+    height: 70%;
+}
+
+@media (min-width: 500px) and (max-width: 700px) {
+    nav ul li {
+        width:50%;
+        margin-bottom:2px;
+    }
+
+    nav {
+        height: 150px;
+    }
+}
+@media (max-width: 500px) {
+    nav ul li {
+        clear:both;
+        width:100%;
+        margin-bottom:2px;
+    }
+
+    nav {
+        height: 240px;
+    }
+}
+
+/* ---------- articles ---------- */
+.naslov {
+    text-align: center;
+    background-color: #45A29E;
+    color: #192029;
+    padding: 7px 0;
+}
+
+#articles h2 {
+    text-align: center;
+}
+
+article {
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+section {
+    margin-bottom: 70px;
+    margin-top: 10px;
+    background-color: #192029;
+}
+
+.article section {
+    max-width: 80%;
+}
+
+/* ---------- footer ---------- */
+footer {
+    text-align: center;
+    background-color: #192029;
+    height: 300px;
+    padding: 50px;
+}
+
+/* ---------- article.php ---------- */
+#articleText img {
+    padding: 0 40px;
+}
+
+#articleText p {
+    padding: 0 40px;
+}
+
+#articleText hr {
+    border: 1px solid #C5C6C7;
+    margin: 30px auto;
+    width: 95%;
+    align-self: center;
+}
+
+.center {
+    text-align: center !important;
+}
